@@ -1,0 +1,22 @@
+body {
+    background-image: url("images/background-crystal-2.jpg");
+    background-size: cover;
+}
+
+.jumbotron {
+    text-align: center;
+
+}
+
+img {
+    padding: 10px;
+    height: 300px;
+    width: auto;
+}
+
+.jtron {
+    height: 100px;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+}
