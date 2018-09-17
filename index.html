@@ -29,16 +29,21 @@
             <p>The value of each crystal is hidden from you until you click on it.</p>
             <p>Each time when the game starts, the game will change the value of each crystal.</p>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row numbers">
+            <div class="col-md-4">
                 <div class="container">
+                    <h6>Random number:</h6>
                     <h1 id="random-number">0</h1>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="container">
-                    <h4 id="win-count">Wins: 0</h4>
-                    <h4 id="loss-count">Losses: 0</h4>
+            <div class="col-md-4">
+                <h6>Your total score is:</h6>
+                <h1 id="total-score">0</h1>
+            </div>
+            <div class="col-md-4">
+                <div class="container win-loss">
+                    <h4>Wins: <span id="win-count">0</span></h4>
+                    <h4>Losses: <span id="loss-count">0</span></h4>
                 </div>
             </div>
         </div>
@@ -48,15 +53,6 @@
             <img class="col-md-3" id="crystal3" src="assets/images/crystal3.png">
             <img class="col-md-3" id="crystal4" src="assets/images/crystal4.png">
         </div>
-        <div class="row">
-            <div class="container">
-                <div class="col-md-6">
-                    <h6>Your total score is:</h6>
-                    <h1 id="total-score">0</h1>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

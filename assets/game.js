@@ -21,41 +21,48 @@ $(document).ready(function () {
         };
         console.log(crystals);
     };
+    // check if total score == random number
+    var gameLogic = function () {
+
+        $("#total-score").html(totalScore);
+
+        if (totalScore == randomNumber) {
+            alert("You Win!");
+            wins++;
+            $("#win-count").html(wins);
+            startGame();
+        } else if (totalScore >= randomNumber) {
+            alert("You Lose!");
+            losses++;
+            $("#loss-count").html(losses);
+            startGame();
+        };
+    };
 
     startGame();
 
 
     $("#crystal1").on("click", function () {
         totalScore += parseInt(crystals.one);
-        $("#total-score").html(totalScore);
+        gameLogic();
     });
 
     $("#crystal2").on("click", function () {
         totalScore += parseInt(crystals.two);
-        $("#total-score").html(totalScore);
+        gameLogic();
     });
 
     $("#crystal3").on("click", function () {
         totalScore += parseInt(crystals.three);
-        $("#total-score").html(totalScore);
+        gameLogic();
     });
 
     $("#crystal4").on("click", function () {
         totalScore += parseInt(crystals.four);
-        $("#total-score").html(totalScore);
+        gameLogic();
     });
 
-    // check if total score == random number
-    if (totalScore == randomNumber) {
-        alert("You Win!");
-        wins++;
-        $("#win-count").html(wins);
-        startGame();
-    } else if (totalScore >= randomNumber) {
-        alert("You Lose!");
-        losses++;
-        $("#loss-count").html(losses);
-        startGame();
-    };
+
+
 
 });
